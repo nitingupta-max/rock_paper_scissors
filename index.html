@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="heading">Welcome To Game World</h1>
+
+    <div class="display1">
+        <div class="game">
+            <p class="game1">
+                Rock<br>
+                Paper<br>
+                Scissors<br>
+            </p>
+        </div>
+            <div class="score">
+                <p class="score1">Score</p>
+                <h1 class="score2">0</h1>
+            </div>
+    </div>
+
+    <div class="hands">
+        <div class="hand scissors">
+            <img class="scissors1"src="Scissors.png" alt="" onclick="pickUserHand('scissors')">
+        </div>
+        <div class="hand rock">
+            <img src="Rock.png" alt="" onclick="pickUserHand('rock')">
+        </div>
+        <div class="hand paper">
+            <img src="Paper.png" alt="" onclick="pickUserHand('paper')">
+        </div>
+    </div>
+
+    <div class="contest">
+        <div class="userhand">
+            <h1 class="you">YOU PICKED</h1>
+            <div class="handImageContainer">
+                <img id="userPickImage" src="Paper.png">
+            </div>
+        </div>
+        <div class="referee">
+            <div class="decision">
+                <h1>YOU WIN</h1></div>
+                <div class="newGame" onclick="restartGame()">PLAY AGAIN</div>
+            
+        </div>
+        <div CLASS="computerhand">
+            <h1>COMPUTER PICKED</h1>
+            <div class="handImageContainer">
+                <img id = "computerPickImage" src="Paper.png" alt="">
+            </div>
+        </div>
+
+    </div>
+
+    <script src="mind.js"></script>
+
+</body>
+</html>

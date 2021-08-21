@@ -1,0 +1,207 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background: url(rock_paper_scissor.png);
+}
+.heading{
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    text-shadow: 2px 2px 10px red;
+}
+.display1{
+    border: 2px solid white;
+    border-radius: 8px;
+    background: chartreuse;
+    position: absolute;
+    display: flex;
+    width: 956px;
+    height: 273px;
+    left: 482px;
+    top: 120px;
+}
+.game{
+    position: absolute;
+width: 373px;
+height: 204px;
+left: 57px;
+top: 32px;
+font-family: Red Hat Text;
+font-style: normal;
+font-weight: bold;
+font-size: 48px;
+line-height: 64px;
+color: #FE02F4;
+}
+.score{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: blanchedalmond;
+    border-radius: 8px;
+    left: 702.42px;
+    top: 32px;
+    font-family: Red Hat Text;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 80px;
+    text-align: center;
+    color: #000000;
+}
+.score2{
+  color:#FE02F4;
+  font-size: 80px;
+}
+.score1,p{
+    color: #FE02F4;
+}
+.hands{
+    background-image: url("triangle.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    visibility: visible;
+    opacity: 1;
+    position: relative;
+    width: 476px;
+    height: 430px;
+    margin-top: 400px;
+    margin-left: 715px;
+    display: flex;
+    z-index: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.hands img {
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin-left: 20px;
+  }
+  
+  .hands .paper {
+    margin-right: 20px;
+  }
+  
+  .hands .scissors {
+    margin-left: 20px;
+  }
+  
+  .hands .hand {
+    cursor: pointer;
+    transition: all 0.25s;
+  }
+  
+  
+  .hands .hand:hover {
+    transform: translate3d(0px, -8px, 0px);
+  }
+.contest{
+    display: none;
+    margin:316px 0px 0px 453px;
+}
+div .contest, h1{
+  color:blanchedalmond;
+}
+.userhand, .computerhand{
+  padding: 60px;
+  margin-top: 50px;
+}
+/* .contest > div{
+  flex:1;
+} */
+.userhand .computerhand img{
+  margin-top: 50px;
+}
+
+div.referee{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+.referee h1{
+  font-size: 50px;
+}
+.contest .newGame{
+  cursor: pointer;
+  transition: all 0.2s;
+  color : black;
+  padding: 12px 24px;
+  border-radius: 8px;
+  background: white;
+  margin-top: 20px;
+}
+#computerPickImage{
+  margin-top: 50px;
+  margin-left: 60px;
+}
+#userPickImage{
+  margin-top: 50px;
+}
+.newGame:hover{
+  background: tomato;
+  transform: translate3d(0px,-2px,0px);
+}
+
+@media (max-width:380px){
+  .heading{
+    margin-left: 25px;
+    font-size: 40px;
+  }
+  .display1{
+    border: 2px solid white;
+    border-radius: 8px;
+    background: chartreuse;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 273px;
+    left: 17px;
+    top: 120px;
+  }
+  .score{
+    left: 74.42px;
+    top: 300px;
+  }
+  .game{
+    left:100px;
+  }
+  .hands img {
+    width: 130px;
+    height: 130px;
+    display: block;
+  }
+  .paper{
+    margin-left: 50px;
+  }
+  .hands{
+    margin-left: -20px;
+    width: 383px;
+    height: 276px;
+    margin-top: 575px;
+    background-image: none;
+  }
+  .contest{
+    flex-direction: column;
+  }
+  .contest{
+    display: none;
+    margin:453px 0px 0px 21px;
+}
+.userhand, .computerhand {
+  padding: 8px;
+  margin-top: 85px;
+}
+#userPickImage {
+  margin-top: 50px;
+  margin-left: 62px;
+}
+div .contest, .you {
+  margin-left: 64px;
+}
+}
