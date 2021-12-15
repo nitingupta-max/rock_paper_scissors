@@ -147,7 +147,7 @@ div.referee{
   transform: translate3d(0px,-2px,0px);
 }
 
-@media (max-width:380px){
+@media (max-width:420px){
   .heading{
     margin-left: 25px;
     font-size: 40px;
